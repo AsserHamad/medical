@@ -1,0 +1,68 @@
+.scroll-card {
+    width: 20%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 0 1vw;
+    padding: 2vh 1vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.scroll-title {
+    font-weight: bold;
+}
+.scroll-description {
+    font-size: 0.7em;
+    color: #828282;
+    margin-bottom: 10vh;
+}
+.scroll-price {
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 2vh 0;
+    text-align: center;
+}
+.scroll-button {
+    border: none;
+    background-color: #6D9FF5;
+    color: white;
+    border-radius: 200px;
+    padding: 0.4vh 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.scroll-button:hover {
+    background-color: #00db36 !important;
+}
+.scroll-button-selected {
+    border: none;
+    background-color: #00db36;
+    color: white;
+    border-radius: 200px;
+    padding: 0.4vh 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+
+@media (max-width: 1000px) {
+    .scroll-card {
+        width: 200px;
+        flex-shrink: 0;
+        padding: 20px 10px;
+    }
+
+    .scroll-button {
+        font-size: 0.9em;
+    }
+
+    .scroll-button-selected {
+        font-size: 0.9em;
+    }
+}
