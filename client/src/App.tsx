@@ -70,7 +70,7 @@ function App() {
           <p className="title">إختر الباقه الطبية</p>
           <p className="subtitle">الرجاء التقدم باختيار باقه طبية قبل تاريخ 20/12/2021</p>
         </div>
-        <a className="title-button" href={`${baseURL}/files/medical_doc.docx`} download>
+        <a className="title-button" href={`medical_doc.docx`} download>
           ما الفرق بين الباقات؟ 
         </a>
         <div className="scroll-container">
