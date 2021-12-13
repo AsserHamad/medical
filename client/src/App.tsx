@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import ScrollCard from './components/primitive/ScrollCard/ScrollCard';
+import { baseURL } from './utils/apis';
 import { changeChoice, checkForChoice } from './utils/api_requests';
 
 const choices = [
@@ -69,7 +70,7 @@ function App() {
           <p className="title">إختر الباقه الطبية</p>
           <p className="subtitle">الرجاء التقدم باختيار باقه طبية قبل تاريخ 20/12/2021</p>
         </div>
-        <a className="title-button" href='http://localhost:3000/files/medical_doc.docx' download>
+        <a className="title-button" href={`${baseURL}/files/medical_doc.docx`} download>
           ما الفرق بين الباقات؟ 
         </a>
         <div className="scroll-container">
