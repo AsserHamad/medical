@@ -1,0 +1,66 @@
+[
+    {
+      "title": {
+        "ar": "الباقة الأولى",
+        "en": "First Package"
+      },
+      "description": {
+        "ar": "للمزيد من المعلومات أنقر على \"ما الفرق بين الباقات؟\"",
+        "en": "For more info, click on \"What's the difference?\""
+      },
+      "price": {
+        "ar": "50,000 ج.م.",
+        "en": "50,000 EGP" 
+      },
+      "color": "#6D9FF5",
+      "number": 1
+    },
+    {
+      "title": {
+        "ar": "الباقة الثانية",
+        "en": "Second Package"
+      },
+      "description": {
+        "ar": "للمزيد من المعلومات أنقر على \"ما الفرق بين الباقات؟\"",
+        "en": "For more info, click on \"What's the difference?\""
+      },
+      "price": {
+        "ar": "100,000 ج.م.",
+        "en": "100,000 EGP"
+      },
+      "color": "#2E7BFF",
+      "number": 2
+    },
+    {
+      "title": {
+        "ar": "الباقة الثالثة",
+        "en": "Third Package"
+      },
+      "description": {
+        "ar": "للمزيد من المعلومات أنقر على \"ما الفرق بين الباقات؟\"",
+        "en": "For more info, click on \"What's the difference?\""
+      },
+      "price": {
+        "ar": "150,000 ج.م.",
+        "en": "150,000 EGP"
+      },
+      "color": "#0000A5",
+      "number": 3
+    },
+    {
+      "title": {
+        "ar": "الباقة الرابعة",
+        "en": "Fourth Package"
+      },
+      "description": {
+        "ar": "للمزيد من المعلومات أنقر على \"ما الفرق بين الباقات؟\"",
+        "en": "For more info, click on \"What's the difference?\""
+      },
+      "price": {
+        "ar": "200,000 ج.م.",
+        "en": "200,000 EGP"
+      },
+      "color": "#06005E",
+      "number": 4
+    }
+]

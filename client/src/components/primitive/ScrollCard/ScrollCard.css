@@ -10,6 +10,10 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.en-card {
+    text-align: left;
+}
+
 .scroll-title {
     font-weight: bold;
 }
@@ -37,7 +41,7 @@
 }
 
 .scroll-button:hover {
-    background-color: #00db36 !important;
+    background-color: #3862ac !important;
 }
 .scroll-button-selected {
     border: none;

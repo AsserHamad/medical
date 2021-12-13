@@ -7,7 +7,7 @@ exports.decryptIbsNo = (req, _, next) => {
         return next({message: 'Not an IBS Number', status: 400})
     const ibsNo = AES.decrypt(encIbsNo, process.env.DECRYPT_KEY).toString(enc.Utf8);
     if(/[0-9]+/.test(ibsNo)) {
-        req.body.ibsNo = ibsNo;
+        req.body.emp = ibsNo;
         next();
     } else
         next({message: 'Not an IBS Number', status: 400})

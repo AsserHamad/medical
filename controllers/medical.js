@@ -1,8 +1,8 @@
 const MedicalChoice = require('../models/medicalChoice');
 
 exports.previousChoice = (req, res, next) => {
-    const {ibsNo} = req.body;
-    MedicalChoice.findOne({emp: ibsNo})
+    const {emp} = req.body;
+    MedicalChoice.findOne({emp})
     .then(choice => {
         res.json(choice);
     })
@@ -10,10 +10,11 @@ exports.previousChoice = (req, res, next) => {
 }
 
 exports.setNewChoice = (req, res, next) => {
-    const {ibsNo : emp, choice} = req.body;
+    const {emp, choice} = req.body;
+    console.log(req.body);
     if(!choice)
         return next({message: 'No choice selected', status: 406})
-    MedicalChoice.findOneAndUpdate({emp}, {$set: {emp, choice}}, {upsert: true, new: true})
+    MedicalChoice.findOneAndUpdate({emp}, {$set: req.body}, {upsert: true, new: true})
     .then(() => {
         res.json({ok: true});
     })

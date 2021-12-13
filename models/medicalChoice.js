@@ -9,6 +9,16 @@ const medicalChoiceSchema = new mongoose.Schema(
         choice: {
             type: Number,
             required: true
+        },
+        info: {
+            empType: Number,
+            adminName: String,
+            adminAddress: String,
+            district: String,
+            governate: String,
+            floor: String,
+            manager: String,
+            central: String
         }
     },
     {timestamps: true}

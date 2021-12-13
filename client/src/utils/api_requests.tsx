@@ -4,6 +4,6 @@ export const checkForChoice = async () => {
     return await HTTP.get('/');
 }
 
-export const changeChoice = async (choice : Number) => {
-    return await HTTP.post('/', {choice});
+export const changeChoice = async (data : any) => {
+    return await HTTP.post('/', data);
 }

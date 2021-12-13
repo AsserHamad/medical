@@ -1,0 +1,67 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    animation: 0.3s fadeIn forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-inner-container {
+    padding: 3vh 2vw;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-button {
+    border-radius: 100px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition-duration: 0.2s;
+    margin: 0 1vw
+}
+
+.form-button-true {
+    background-color: #6D9FF5;
+    color: white;
+}
+
+.form-button-false {
+    background-color: white;
+    color: black;
+}
+
+.form-button-false:hover {
+    background-color: #d0dcf0;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .modal-inner-container {
+        width: 90%;
+        height: 70%;
+        overflow-y: scroll
+    }
+}
